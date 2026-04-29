@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andriavahatriniala Vohary Niriana — Designer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="ico/ico.jpg">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo" onclick="showPage('home')">Andriavahatriniala<span>.</span>Vohary Niriana</div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home'); return false;" data-page="home" class="active">Accueil</a></li>
+    <li><a href="#" onclick="showPage('bio'); return false;" data-page="bio">Biographie</a></li>
+    <li><a href="#" onclick="showPage('projects'); return false;" data-page="projects">Projets</a></li>
+    <li><a href="#" onclick="showPage('cv'); return false;" data-page="cv">CV</a></li>
+    <li><a href="#" onclick="showPage('contact'); return false;" data-page="contact">Contact</a></li>
+  </ul>
+  <a href="#" onclick="showPage('contact'); return false;" class="nav-cta">Travailler ensemble →</a>
+  <button class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home'); toggleMenu(); return false;">Accueil</a>
+  <a href="#" onclick="showPage('bio'); toggleMenu(); return false;">Biographie</a>
+  <a href="#" onclick="showPage('projects'); toggleMenu(); return false;">Projets</a>
+  <a href="#" onclick="showPage('cv'); toggleMenu(); return false;">CV</a>
+  <a href="#" onclick="showPage('contact'); toggleMenu(); return false;">Contact</a>
+</div>
+
+<!-- PAGE 1 — ACCUEIL-->
+<div class="page active" id="home">
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Designer graphique &amp; Monteur video</p>
+      <h1>Andriavahatriniala<em>Vohary Niriana</em></h1>
+      <p class="hero-sub">Je crée des identités visuelles, des expériences numériques et des marques qui laissent une empreinte durable dans la mémoire des gens.</p>
+      <div class="hero-actions">
+        <a href="#" onclick="showPage('projects'); return false;" class="btn-primary">Voir les projets →</a>
+        <a href="#" onclick="showPage('contact'); return false;" class="btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Années d'expérience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">25</div>
+        <div class="stat-label">Projets livrés</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10$ /h</div>
+        <div class="stat-label">Prix & distinctions</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Identité visuelle</span><span class="dot">✦</span>
+      <span>Design</span><span class="dot">✦</span>
+      <span>Graphiste</span><span class="dot">✦</span>
+      <span>Typographie</span><span class="dot">✦</span>
+      <span>Monteur Video</span><span class="dot">✦</span>
+      <span>Identité visuelle</span><span class="dot">✦</span>
+      <span>Design</span><span class="dot">✦</span>
+      <span>Typographie</span><span class="dot">✦</span>
+      <span>Monteur Video</span><span class="dot">✦</span>
+    </div>
+  </div>  
+
+  <section class="home-work">
+    <div class="section-header">
+      <h2 class="section-title">Travaux <em>récents</em></h2>
+      <a href="#" onclick="showPage('projects'); return false;" class="section-link">Tous les projets →</a>
+    </div>
+    <div class="work-grid">
+      <div class="work-card" onclick="openModal('atrika')">
+        <div class="work-card-bg">
+          <svg viewBox="0 0 600 900">
+            <rect width="600" height="900" fill="#111111"/>
+            <image href="Logo Atrika transpa version 2.png" x="100" y="100" width="80%">
+            <text x="50" y="820" font-family="Georgia" font-size="90" fill="#e8c547" opacity="0.07" font-style="italic">Design</text>
+          </svg>
+        </div>
+        <div class="work-card-info">
+          <p class="work-card-cat">Identité visuelle</p>
+          <p class="work-card-title">Atrika — Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE 2 — BIOGRAPHIE
+══════════════════════════════════ -->
+<div class="page" id="bio">
+
+  <div class="bio-hero">
+    <div class="bio-left">
+      <div>
+        <h2>À<br>pro<em>pos</em></h2>
+        <p>Née à Antananarivo en 2006, Andriavahatriniala Vohary Niriana passioné du design et du monde de la création digital. Autodidacte capable de s'adapter avec l'environnement</p>
+        <p>Chaque projet commence par une seule question — <em>quelle émotion ce signe doit-il laisser dans le corps ?</em></p>
+      </div>
+      <div style="display:flex; gap:1rem; margin-top:2rem; flex-wrap:wrap;">
+        <a href="#" onclick="showPage('projects'); return false;" class="btn-primary">Voir mes projets →</a>
+        <a href="#" onclick="showPage('cv'); return false;" class="btn-outline">Télécharger CV</a>
+      </div>
+    </div>
+    <div class="bio-right">
+      <div class="bio-portrait">
+        <div class="bio-portrait-frame">
+           <svg width="800px" height="800px" viewBox="0 0 61.7998 61.7998" xmlns="http://www.w3.org/2000/svg">
+            <title/>
+              <g data-name="Layer 2" id="Layer_2">
+                <g data-name="—ÎÓÈ 1" id="_ÎÓÈ_1">
+                <circle cx="30.8999" cy="30.8999" fill="#ffc200" r="30.8999"/>
+                <path d="M52.587 52.908a30.895 30.895 0 0 1-43.667-.291 9.206 9.206 0 0 1 4.037-4.832 19.799 19.799 0 0 1 4.075-2.322c-2.198-7.553 3.777-11.266 6.063-12.335 0 3.487 3.265 1.173 7.317 1.217 3.336.037 9.933 3.395 9.933-1.035 3.67 1.086 7.67 8.08 4.917 12.377a17.604 17.604 0 0 1 3.181 2.002 10.192 10.192 0 0 1 4.144 5.22z" fill="#677079" fill-rule="evenodd"/>
+                <path d="M24.032 38.68l14.92.09v3.437l-.007.053a2.784 2.784 0 0 1-.07.462l-.05.341-.03.071c-.966 5.074-5.193 7.035-7.803 8.401-2.75-1.498-6.638-4.197-6.947-8.972l-.013-.059v-.2a8.897 8.897 0 0 1-.004-.207c0 .036.003.07.004.106z" fill="#f9dca4" fill-rule="evenodd"/>
+                <path d="M38.953 38.617v4.005a7.167 7.167 0 0 1-.095 1.108 6.01 6.01 0 0 1-.38 1.321c-5.184 3.915-13.444.704-14.763-5.983z" fill-rule="evenodd" opacity="0.11"/>
+                <path d="M18.104 25.235c-4.94 1.27-.74 7.29 2.367 7.264a19.805 19.805 0 0 1-2.367-7.264z" fill="#f9dca4" fill-rule="evenodd"/>
+                <path d="M43.837 25.235c4.94 1.27.74 7.29-2.368 7.263a19.8 19.8 0 0 0 2.368-7.263z" fill="#f9dca4" fill-rule="evenodd"/>
+                <path d="M30.733 11.361c20.523 0 12.525 32.446 0 32.446-11.83 0-20.523-32.446 0-32.446z" fill="#ffe8be" fill-rule="evenodd"/>
+                <path d="M21.047 22.105a1.738 1.738 0 0 1-.414 2.676c-1.45 1.193-1.503 5.353-1.503 5.353-.56-.556-.547-3.534-1.761-5.255s-2.032-13.763 4.757-18.142a4.266 4.266 0 0 0-.933 3.6s4.716-6.763 12.54-6.568a5.029 5.029 0 0 0-2.487 3.26s6.84-2.822 12.54.535a13.576 13.576 0 0 0-4.145 1.947c2.768.076 5.443.59 7.46 2.384a3.412 3.412 0 0 0-2.176 4.38c.856 3.503.936 6.762.107 8.514-.829 1.752-1.22.621-1.739 4.295a1.609 1.609 0 0 1-.77 1.214c-.02.266.382-3.756-.655-4.827-1.036-1.07-.385-2.385.029-3.163 2.89-5.427-5.765-7.886-10.496-7.88-4.103.005-14 1.87-10.354 7.677z" fill="#8a5c42" fill-rule="evenodd"/>
+                <path d="M19.79 49.162c.03.038 10.418 13.483 22.63-.2-1.475 4.052-7.837 7.27-11.476 7.26-6.95-.02-10.796-5.6-11.154-7.06z" fill="#434955" fill-rule="evenodd"/>
+                <path d="M36.336 61.323c-.41.072-.822.135-1.237.192v-8.937a.576.576 0 0 1 .618-.516.576.576 0 0 1 .619.516v8.745zm-9.82.166q-.622-.089-1.237-.2v-8.711a.576.576 0 0 1 .618-.516.576.576 0 0 1 .62.516z" fill="#e6e6e6" fill-rule="evenodd"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bio-details">
+    <div class="bio-detail-item">
+      <p class="bio-detail-label">Localisation</p>
+      <p class="bio-detail-value">Antananarivo, Madagascar</p>
+      <p class="bio-detail-sub">Disponible en remote et en présentiel si nécessaire</p>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <h3>Parcours <em>chronologique</em></h3>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2025 →</span>
+      <div class="timeline-content">
+        <h4>Designer - Atrika</h4>
+        <p>Designer principal et monteur video à Atrika</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2025 →</span>
+      <div class="timeline-content">
+        <h4>Etude en Infrmatique - CNTEMAD (L2)</h4>
+        <p>Etude en informatique</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-grid" id="skillsSection">
+    <h3>Compétences <em>techniques</em></h3>
+    <div class="skills-bars">
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Adobe Photoshop</span><span class="skill-bar-pct">98%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:98%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Adobe Illustrator</span><span class="skill-bar-pct">97%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:97%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Adobe Premier Pro</span><span class="skill-bar-pct">50%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:50%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Adobe After Effect</span><span class="skill-bar-pct">45%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:45%"></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE 3 — PROJETS
+══════════════════════════════════ -->
+<div class="page" id="projects">
+
+  <div class="projects-header">
+    <h2>Mes<br><em>Projets</em></h2>
+    <div class="filter-tabs">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">Tous</button>
+      <button class="filter-btn" onclick="filterProjects('design', this)">Graphic Design</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">Website Design</button>
+      <button class="filter-btn" onclick="filterProjects('video', this)">Video</button>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card" data-cat="design" onclick="openModal('atrika')">
+      <div class="project-card-visual">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="360" fill="#1a1208"/>
+          <circle cx="240" cy="180" r="150" fill="none" stroke="#e8c547" stroke-width="0.8" opacity="0.3"/>
+          <circle cx="240" cy="180" r="100" fill="none" stroke="#e8c547" stroke-width="0.8" opacity="0.4"/>
+          <circle cx="240" cy="180" r="55" fill="#e8c54715"/>
+          <circle cx="240" cy="180" r="22" fill="#e8c547" opacity="0.85"/>
+          <line x1="0" y1="180" x2="480" y2="180" stroke="#e8c547" stroke-width="0.3" opacity="0.15"/>
+          <line x1="240" y1="0" x2="240" y2="360" stroke="#e8c547" stroke-width="0.3" opacity="0.15"/>
+          <text x="30" y="340" font-family="Georgia" font-size="70" fill="#e8c547" opacity="0.06" font-style="italic">Solaris</text>
+        </svg>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tags"><span class="tag">Identité</span><span class="tag">2024</span></div>
+        <h3 class="project-card-title">Atrika — Social Media design</h3>
+        <p class="project-card-desc">Création des visuels pour les publications de la page</p>
+        <a href="#" class="project-card-link" onclick="openModal('atrika'); return false;">Voir le projet →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE 4 — CV
+══════════════════════════════════ -->
+<div class="page" id="cv">
+  <div class="cv-page">
+
+    <div class="cv-page-header">
+      <div>
+        <h2>Mon<br><em>Curriculum</em><br>Vitae</h2>
+        <p style="font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;color:var(--muted);margin-top:1rem;text-transform:uppercase;">Dernière mise à jour — Janvier 2026</p>
+      </div>
+      <a href="Cv- NIriana 2026.pdf" download="Cv-Niriana2026.pdf" class="cv-download-btn">
+        <span class="cv-download-icon">↓</span>
+        Télécharger le CV<br>
+        <span style="font-size:0.55rem;opacity:0.7;">Format PDF — 208 Ko</span>
+      </a>
+    </div>
+
+    <!-- CV PREVIEW -->
+    <div class="cv-preview">
+      <div class="cv-header-row">
+        <div>
+          <div class="cv-name">Andriavahatriniala <em>Vohary Niriana</em></div>
+          <div class="cv-title-role">Designer graphique</div>
+        </div>
+        <div class="cv-contact-info">
+          <div>nirianavoharu@gmail.com</div>
+          <div>+261 38 45 139 12</div>
+          <div>Antananarivo, Madagascar</div>
+        </div>
+      </div>
+    </div>
+    <div class="cv-formats">
+      <div class="format-card">
+        <div class="format-icon">📄</div>
+        <div class="format-name">PDF Standard</div>
+        <div class="format-desc">Haute résolution · 200 Ko</div>
+        <embed src="Cv- NIriana 2026.pdf" type="application/pdf" width="600" height="400">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE 5 — CONTACT
+══════════════════════════════════ -->
+<div class="page" id="contact">
+  <div class="contact-layout">
+
+    <div class="contact-left">
+      <div>
+        <h2>Tra<em>vail</em>lons<br>ensemble</h2>
+        <p>Vous avez un projet en tête ? Un brief à partager ? Une idée à concrétiser ? Je serais ravie d'en discuter autour d'un café virtuel.</p>
+
+        <ul class="contact-info-list">
+          <li>
+            <div><img src="ico/email (1).png" class="contact-info-icon"></div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value"><a href="mailto:nirianavoharu@gmail.com">nirianavoharu@gmail.com</a></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="ico/phc.png" class="contact-info-icon"></div>
+            <div>
+              <p class="contact-info-label">Téléphone</p>
+              <p class="contact-info-value">+261 38 11 702 44</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="ico/wa.png" class="contact-info-icon"></div>
+            <div>
+              <p class="contact-info-label">WhatsApp</p>
+              <p class="contact-info-value">+261 38 45 139 12</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="ico/li.png" class="contact-info-icon"></div>
+            <div>
+              <p class="contact-info-label">Adresse</p>
+              <p class="contact-info-value">Antananarivo, Madagascar</p>
+            </div>
+          </li>
+          <li>
+            <div><img src="ico/lhorloge.png" class="contact-info-icon"></div>
+            <div>
+              <p class="contact-info-label">Disponibilité</p>
+              <p class="contact-info-value">Lun – Ven, 8h – 18h</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="social-link"><img src="ico/Fb.png" class="contact-info-icon"></a>
+        <a href="#" class="social-link"><img src="ico/instagram.png " class="contact-info-icon"></a>
+        <a href="#" class="social-link"><img src="ico/tic-tac.png" class="contact-info-icon"></a>
+        <a href="#" class="social-link"><img src="ico/twitter.png" class="contact-info-icon"></a>
+        <a href="#" class="social-link"><img src="ico/linkedin.png" class="contact-info-icon"></a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <p class="form-title">Envoyez-moi un message</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Prénom *</label>
+          <input type="text" class="form-control" placeholder="Votre prénom" id="f-name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Nom *</label>
+          <input type="text" class="form-control" placeholder="Votre nom" id="f-lastname">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Email *</label>
+        <input type="email" class="form-control" placeholder="votre@email.com" id="f-email">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Entreprise / Organisation</label>
+        <input type="text" class="form-control" placeholder="Nom de votre société" id="f-company">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Type de projet *</label>
+        <select class="form-control" id="f-type">
+          <option value="" disabled selected>Sélectionner un type…</option>
+          <option>Identité visuelle</option>
+          <option>Design</option>
+          <option>Montage Video</option>
+          <option>Packaging</option>
+          <option>Autre</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Budget estimé</label>
+        <select class="form-control" id="f-budget">
+          <option value="" disabled selected>Sélectionner une fourchette…</option>
+          <option>< 10 000 Ar</option>
+          <option>10 000 – 50 000 Ar</option>
+          <option>50 000 – 100 000 Ar</option>
+          <option>100 000 – 200 000 Ar</option>
+          <option>> 200 000 Ar</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Message *</label>
+        <textarea class="form-control" placeholder="Décrivez votre projet, vos objectifs, vos contraintes…" id="f-message"></textarea>
+      </div>
+
+      <button class="form-submit" onclick="submitForm()">
+        Envoyer le message →
+      </button>
+
+      <div class="form-success" id="formSuccess">
+        <p>✦ Merci ! Votre message a bien été envoyé. Je vous répondrai dans les 24 heures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ PROJECT MODAL ══════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="modal-visual" id="modalVisual"></div>
+    <div class="modal-body">
+      <p class="modal-cat" id="modalCat"></p>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-text" id="modalText"></p>
+      <div class="modal-meta">
+        <div class="modal-meta-item">
+          <p class="label">Année</p>
+          <p class="value" id="modalYear"></p>
+        </div>
+        <div class="modal-meta-item">
+          <p class="label">Client</p>
+          <p class="value" id="modalClient"></p>
+        </div>
+        <div class="modal-meta-item">
+          <p class="label">Services</p>
+          <p class="value" id="modalServices"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-logo">Andriavahatriniala<span>.</span>Vohary Niriana</div>
+  <p>© 202 Andriavahatriniala Vohary Niriana — Tous droits réservés</p>
+  <div class="footer-links">
+    <a href="#" onclick="showPage('home'); return false;">Accueil</a>
+    <a href="#" onclick="showPage('bio'); return false;">Bio</a>
+    <a href="#" onclick="showPage('projects'); return false;">Projets</a>
+    <a href="#" onclick="showPage('cv'); return false;">CV</a>
+    <a href="#" onclick="showPage('contact'); return false;">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
