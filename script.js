@@ -90,15 +90,15 @@ window.filterProjects = filterProjects;
 
 /* PROJECT MODAL DATA */
 const projects = {
-  /*atrika: {
+  atrika: {
     cat: 'Identité visuelle',
-    title: 'Solaris — Studio de musique',
-    text: "Création complète de l'identité visuelle pour Solaris, un studio d''enregistrement parisien spécialisé en musique électronique et jazz contemporain. Le projet couvre la conception du logo, la charte graphique complète, les templates pour réseaux sociaux, la signalétique du studio et les supports print. Le concept s''articule autour du soleil comme métaphore de la création — lumière, chaleur, orbites sonores.",
-    year: '2023',
-    client: 'Studio Solaris, Paris',
-    services: 'Logo, Charte, Print, Social',
-    svg: `<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="350" fill="#1a1208"/><circle cx="400" cy="175" r="160" fill="none" stroke="#e8c547" stroke-width="0.8" opacity="0.3"/><circle cx="400" cy="175" r="110" fill="none" stroke="#e8c547" stroke-width="0.8" opacity="0.4"/><circle cx="400" cy="175" r="65" fill="#e8c54712"/><circle cx="400" cy="175" r="25" fill="#e8c547" opacity="0.9"/><line x1="0" y1="175" x2="800" y2="175" stroke="#e8c547" stroke-width="0.3" opacity="0.12"/><line x1="400" y1="0" x2="400" y2="350" stroke="#e8c547" stroke-width="0.3" opacity="0.12"/><text x="30" y="320" font-family="Georgia" font-size="90" fill="#e8c547" opacity="0.06" font-style="italic">Solaris</text></svg>`
-  },*/
+    title: 'Design - Social Media design',
+    text: "Création complète des visuelle pour réseaux sociaux de Atrika Association, création des templates pour les posts et stories, ainsi que des éléments graphiques pour les événements et campagnes de sensibilisation.",
+    year: '2025',
+    /*client: '',*/
+    services: 'Logo, Print, Social, badge',
+    img: 'img/pj1.png'
+  },
 };
 
 /* OPEN MODAL */
@@ -123,7 +123,15 @@ function openModal(id) {
   modalYear.textContent = p.year;
   modalClient.textContent = p.client;
   modalServices.textContent = p.services;
-  modalVisual.innerHTML = p.svg;
+
+  const img = document.createElement('img');
+  img.src = p.img;
+  img.alt = p.title;
+  img.style.maxWidth = '100%';
+  img.style.borderRadius = '8px';
+  modalVisual.innerHTML = '';
+  modalVisual.appendChild(img);
+
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
