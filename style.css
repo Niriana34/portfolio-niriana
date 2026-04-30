@@ -1259,6 +1259,27 @@ nav.scrolled { padding: 1rem 4vw; }
   justify-content: center;
 }
 
+/* Style du formulaire de contact quand il est indisponible */
+.contact-right.unavailable {
+  opacity: 0.55;
+  filter: grayscale(0.4);
+  pointer-events: none;
+}
+
+.contact-right.unavailable .form-submit {
+  background: #444;
+  color: var(--muted);
+}
+
+.contact-right.unavailable .contact-unavailable {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+
 .form-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;

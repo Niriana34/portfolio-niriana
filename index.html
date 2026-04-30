@@ -304,13 +304,6 @@
             </div>
           </li>
           <li>
-            <div><img src="ico/wa.png" class="contact-info-icon"></div>
-            <div>
-              <p class="contact-info-label">WhatsApp</p>
-              <p class="contact-info-value">+261 38 45 139 12</p>
-            </div>
-          </li>
-          <li>
             <div><img src="ico/li.png" class="contact-info-icon"></div>
             <div>
               <p class="contact-info-label">Adresse</p>
@@ -328,41 +321,44 @@
       </div>
 
       <div class="social-links">
-        <a href="#" class="social-link"><img src="ico/Fb.png" class="contact-info-icon"></a>
-        <a href="#" class="social-link"><img src="ico/instagram.png " class="contact-info-icon"></a>
-        <a href="#" class="social-link"><img src="ico/tic-tac.png" class="contact-info-icon"></a>
-        <a href="#" class="social-link"><img src="ico/twitter.png" class="contact-info-icon"></a>
-        <a href="#" class="social-link"><img src="ico/linkedin.png" class="contact-info-icon"></a>
+        <a href="https://www.facebook.com/niriana.vohary.official.page" class="social-link"><img src="ico/Fb.png" class="contact-info-icon"></a>
+        <a href="https://www.instagram.com/bniii_up" class="social-link"><img src="ico/instagram.png " class="contact-info-icon"></a>
+        <a href="https://www.tiktok.com/@niriana34" class="social-link"><img src="ico/tic-tac.png" class="contact-info-icon"></a>
+        <a href="https://twitter.com/niriana34" class="social-link"><img src="ico/twitter.png" class="contact-info-icon"></a>
+        <a href="https://www.linkedin.com/in/niriana-vohary-andriavahatriniala-78b29b20a/" class="social-link"><img src="ico/linkedin.png" class="contact-info-icon"></a>
+        <a href="https://wa.me/261384513912?text=Bonjour%20Niriana%2C%20je%20souhaite%20vous%20contacter%20pour%20un%20projet." class="social-link" target="_blank" rel="noopener"><img src="ico/wa.png" class="contact-info-icon"></a>
       </div>
     </div>
 
-    <div class="contact-right">
+    <!-- Contact form disabled state -->
+    <div class="contact-right unavailable" aria-disabled="true">
+      <p class="contact-unavailable" style="color: white">Indisponible pour le moment</p>
       <p class="form-title">Envoyez-moi un message</p>
 
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Prénom *</label>
-          <input type="text" class="form-control" placeholder="Votre prénom" id="f-name">
+          <input type="text" class="form-control" placeholder="Votre prénom" id="f-name" disabled>
         </div>
         <div class="form-group">
           <label class="form-label">Nom *</label>
-          <input type="text" class="form-control" placeholder="Votre nom" id="f-lastname">
+          <input type="text" class="form-control" placeholder="Votre nom" id="f-lastname" disabled>
         </div>
       </div>
 
       <div class="form-group">
         <label class="form-label">Email *</label>
-        <input type="email" class="form-control" placeholder="votre@email.com" id="f-email">
+        <input type="email" class="form-control" placeholder="votre@email.com" id="f-email" disabled>
       </div>
 
       <div class="form-group">
         <label class="form-label">Entreprise / Organisation</label>
-        <input type="text" class="form-control" placeholder="Nom de votre société" id="f-company">
+        <input type="text" class="form-control" placeholder="Nom de votre société" id="f-company" disabled>
       </div>
 
       <div class="form-group">
         <label class="form-label">Type de projet *</label>
-        <select class="form-control" id="f-type">
+        <select class="form-control" id="f-type" disabled>
           <option value="" disabled selected>Sélectionner un type…</option>
           <option>Identité visuelle</option>
           <option>Design</option>
@@ -374,7 +370,7 @@
 
       <div class="form-group">
         <label class="form-label">Budget estimé</label>
-        <select class="form-control" id="f-budget">
+        <select class="form-control" id="f-budget" disabled>
           <option value="" disabled selected>Sélectionner une fourchette…</option>
           <option>< 10 000 Ar</option>
           <option>10 000 – 50 000 Ar</option>
@@ -386,10 +382,10 @@
 
       <div class="form-group">
         <label class="form-label">Message *</label>
-        <textarea class="form-control" placeholder="Décrivez votre projet, vos objectifs, vos contraintes…" id="f-message"></textarea>
+        <textarea class="form-control" placeholder="Décrivez votre projet, vos objectifs, vos contraintes…" id="f-message" disabled></textarea>
       </div>
 
-      <button class="form-submit" onclick="submitForm()">
+      <button class="form-submit" onclick="submitForm()" disabled>
         Envoyer le message →
       </button>
 
@@ -430,7 +426,7 @@
 <!-- ══════════ FOOTER ══════════ -->
 <footer>
   <div class="footer-logo">Andriavahatriniala<span>.</span>Vohary Niriana</div>
-  <p>© 202 Andriavahatriniala Vohary Niriana — Tous droits réservés</p>
+  <p>© 2026 Andriavahatriniala Vohary Niriana — Tous droits réservés</p>
   <div class="footer-links">
     <a href="#" onclick="showPage('home'); return false;">Accueil</a>
     <a href="#" onclick="showPage('bio'); return false;">Bio</a>
